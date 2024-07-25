@@ -1,2 +1,35 @@
-# misskey-call
-Utilizes WebRTC, Integrates with Misskey accounts
+# Misskey Call
+
+## 概要
+Misskeyユーザーが通話できるプラットフォームをWorkersとCallsを使用してサーバーレス環境で動作させたい。
+
+## 機能案
+
+1. **ユーザー認証**
+   - MisskeyのOAuthを利用してユーザーを認証し、プロフィール情報を取得
+   - アイコンや名前はMisskeyのやつを使用
+
+2. **友達リスト**
+   - Misskeyのフォロー・フォロワーをもとにする
+
+3. **通話機能**
+   - 友達リストから通話相手を選択し、通話リクエストを送信
+   - 通話中のミュート、通話終了などの基本機能
+   - 公開リンクによる通話の招待
+
+4. **グループ通話**
+   - 複数のユーザーを選択してグループ通話を開始
+
+5. **通話履歴と通知**
+   - 過去の通話履歴を表示
+   - 通話リクエストの通知
+
+6. **プライバシー設定**
+   - 通話リクエストを受け付ける相手を制限
+   - 通話履歴の保存・削除の管理
+   - 履歴はブラウザに保存する形式にしたい
+
+
+## メモ
+- https://github.com/cloudflare/workers-rs/
+- https://developers.cloudflare.com/calls/limits/
